@@ -1,0 +1,69 @@
+@import "src/styles/colors.scss";
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: $lightblue;
+  padding: 0.5%;
+  position: absolute;
+}
+
+.footer-logo {
+  display: block;
+  width: 30px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.footer-text {
+  font-size: 10px;
+  font-style: italic;
+  color: $primary-color;
+  padding-top: 0.3%;
+}
+
+.col-sm-1 {
+  flex: 0 0 auto;
+  width: 5%;
+}
+
+.col-sm-4 {
+  flex: 0 0 auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+  .col-sm-1 {
+    flex: 0 0 auto;
+    width: 7.5%;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 575.5px) {
+  .col-sm-1 {
+    flex: 0 0 auto;
+    width: 10%;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .col-sm-1 {
+    flex: 0 0 auto;
+    width: 15%;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}

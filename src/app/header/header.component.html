@@ -1,0 +1,66 @@
+<br>
+<img routerLink="/home" src="/assets/images/new_logo.png" alt="Logo" class="center">
+
+<nav class="navbar navbar-expand-sm navbar-text">
+  <div class="container-fluid topnav">
+
+    <ul class="navbar-nav mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/home">home</a>
+      </li>
+    </ul>
+
+    <button class="navbar-toggler menu-button" (click)="collapsed = !collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span><img src="assets/images/menu-bar.png" class="menu-bar" alt="menu"/></span>
+    </button>
+
+    <div (window:resize)="collapsed = true" [class.collapse]="collapsed" class="collapse navbar-collapse"
+         id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li ngbDropdown class="nav-item">
+          <a ngbDropdownToggle class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            teaching
+          </a>
+          <ul ngbDropdownMenu aria-labelledby="navbarDropdown">
+            <li><a ngbDropdownItem href="teaching/subjects">subjects</a></li>
+            <li><a ngbDropdownItem href="teaching/timetable">timetable</a></li>
+            <li><a ngbDropdownItem href="teaching/diploma_thesis">diploma thesis</a></li>
+            <li><a ngbDropdownItem href="teaching/tutor_activity">tutor activity</a></li>
+          </ul>
+        </li>
+
+        <li ngbDropdown class="nav-item">
+          <a ngbDropdownToggle class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            research
+          </a>
+          <ul ngbDropdownMenu aria-labelledby="navbarDropdown">
+            <li><a ngbDropdownItem href="research/interests">interests</a></li>
+            <li><a ngbDropdownItem href="research/projects">projects</a></li>
+            <li><a ngbDropdownItem href="research/publications">publications</a></li>
+          </ul>
+        </li>
+
+        <li ngbDropdown class="nav-item">
+          <a ngbDropdownToggle class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            about me
+          </a>
+          <ul ngbDropdownMenu aria-labelledby="navbarDropdown">
+            <li><a ngbDropdownItem href="about_me/personal_infos">personal infos</a></li>
+            <li><a ngbDropdownItem href="about_me/hobbies">hobbies</a></li>
+            <li><a ngbDropdownItem href="about_me/curriculum_vitae">curriculum vitae</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item li-border">
+          <a class="nav-link" aria-current="page" href="/contact">contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
