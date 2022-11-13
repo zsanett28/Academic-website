@@ -1,0 +1,160 @@
+@import "src/styles/colors.scss";
+
+img.left {
+  display: block;
+  width: 260px;
+  margin-left: 25%;
+}
+
+img.small-icon {
+  display: inline;
+  width: 30px;
+  margin-left: 3%;
+  vertical-align: -5px;
+}
+
+.container {
+  margin-top: 3%;
+  max-width: 900px;
+}
+
+.greeting-box {
+  background-color: $lightblue;
+  border: 1px solid $blue;
+  border-radius: 10%;
+}
+
+.greeting-message {
+  padding: 5%;
+}
+
+.title-font {
+  color: $secondary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 28px;
+  text-align: center;
+}
+
+.subtitle-font {
+  color: $blue;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.subtitle-font-2 {
+  color: $blue;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.small-text {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.sub-row {
+  margin-top: 2%;
+  margin-bottom: 10vh;
+}
+
+.email-link {
+  color: black;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    margin-top: 3%;
+  }
+
+  .sub-row {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 991.5px) {
+  .greeting-message {
+    padding: 2%;
+  }
+
+  img.left {
+    width: 230px;
+  }
+}
+
+@media (max-width: 880px) {
+  .col-md-8 {
+    width: 60%;
+  }
+
+  .greeting-message > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  //.col-md-8 {
+  //  width: 80%;
+  //}
+  //
+  .col-md-4 {
+    width: 20%;
+  }
+
+  img.left {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 575.5px) {
+  .greeting-message {
+    font-size: 14px;
+  }
+
+  img.left {
+    width: 200px;
+  }
+
+  .container {
+    margin-top: 0%;
+    margin-bottom: 15%;
+  }
+}
+
+@media (max-width: 479.5px) {
+  .col-md-8 {
+    width: 100%;
+  }
+
+  .col-md-4 {
+    width: 100%;
+  }
+
+  img.left {
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+  }
+
+  .greeting-message{
+    font-size: 14px;
+  }
+
+  .container {
+    margin-bottom: 0%;
+  }
+}

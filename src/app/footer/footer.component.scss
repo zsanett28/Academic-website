@@ -1,22 +1,20 @@
 @import "src/styles/colors.scss";
 
 footer {
-  bottom: 0;
   width: 100%;
   background-color: $lightblue;
   padding: 0.5%;
-  position: absolute;
 }
 
 .footer-logo {
   display: block;
-  width: 30px;
+  width: 38px;
   cursor: pointer;
   margin: auto;
 }
 
 .footer-text {
-  font-size: 10px;
+  font-size: 12px;
   font-style: italic;
   color: $primary-color;
   padding-top: 0.3%;
@@ -54,6 +52,10 @@ footer {
     flex: 0 0 auto;
     width: 30%;
   }
+
+  footer {
+    position: fixed;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -66,4 +68,10 @@ footer {
     flex: 0 0 auto;
     width: 20%;
   }
+}
+
+@media (max-width: 479.5px) {
+ footer {
+   position: relative;
+ }
 }
