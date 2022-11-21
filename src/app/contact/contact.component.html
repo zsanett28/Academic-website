@@ -1,1 +1,66 @@
-<p>contact works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <div class="contacts">
+        <p><span class="subtitle-font">Email: </span><a href="mailto:jakabzsanett10@gmail.com" target="_blank" class="email-link">jakabzsanett10@gmail.com</a></p>
+        <p><span class="subtitle-font">Office: </span>Office No. 410, Teodor Mihali Street No.58-60, Cluj-Napoca</p>
+        <p><span class="subtitle-font">Phone number: </span>0264 123 456</p>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="form-title">What's on your mind?</p>
+        </div>
+      </div>
+
+      <form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()" method="POST">
+
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control" formControlName="firstname" placeholder="Firstname">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" formControlName="lastname" id="lastname" placeholder="Lastname">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <input type="email" class="form-control" formControlName="email" id="email" placeholder="Email">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" formControlName="subject" id="subject" placeholder="Subject">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <textarea type="text" rows="5" class="form-control" formControlName="message" id="message" placeholder="Message/Feedback"></textarea>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button [disabled]="!feedbackForm.valid" type="submit" class="btn btn-primary send-button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div
+    class="modal"
+    tabindex="-1"
+    role="dialog"
+    [ngStyle]="{'display':displayStyle}">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="success-message"><img src="/assets/images/ok-icon.png" alt="Success icon" width="30px"> Your message has been sent! Thank you for your feedback!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success"
+                  (click)="closePopup()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

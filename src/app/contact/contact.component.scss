@@ -1,0 +1,93 @@
+@import "src/styles/colors.scss";
+
+.container {
+  margin-top: 3%;
+  max-width: 900px;
+}
+
+.contacts {
+  padding: 85px 0px 85px 0px;
+  font-size: 16px;
+}
+
+.subtitle-font {
+  color: $blue;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.email-link {
+  color: black;
+  font-style: italic;
+}
+
+.form-control {
+  margin-bottom: 2%;
+}
+
+.form-title {
+  color: $primary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+
+input.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
+
+textarea.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
+
+.send-button {
+  margin-bottom: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $lightblue;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-size: 22px;
+  padding-block: 0%;
+}
+
+.send-button:hover {
+  background-color: $blue;
+}
+
+.modal-content {
+  background-color: lightgreen;
+}
+
+.success-message {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 991.5px) {
+  .contacts{
+    font-size: 14px;
+  }
+
+  .subtitle-font {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 892.5px) {
+  .contacts{
+    padding: 60px 0px 60px 0px;
+  }
+}
+
+@media screen and (max-width: 767.5px) {
+  .contacts{
+    padding: 10px 0px 10px 0px;
+  }
+}

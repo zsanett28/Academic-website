@@ -18,6 +18,8 @@ import { PersonalInfosComponent } from './about_me/personal-infos/personal-infos
 import { HobbiesComponent } from './about_me/hobbies/hobbies.component';
 import { CurriculumVitaeComponent } from './about_me/curriculum-vitae/curriculum-vitae.component';
 import { FooterComponent } from './footer/footer.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,11 +39,13 @@ import { FooterComponent } from './footer/footer.component';
     CurriculumVitaeComponent,
     FooterComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        ReactiveFormsModule,
+        HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
