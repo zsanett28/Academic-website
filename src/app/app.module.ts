@@ -9,17 +9,16 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { SubjectsComponent } from './teaching/subjects/subjects.component';
 import { TimetableComponent } from './teaching/timetable/timetable.component';
-import { DiplomaThesisComponent } from './teaching/diploma-thesis/diploma-thesis.component';
-import { TutorActivityComponent } from './teaching/tutor-activity/tutor-activity.component';
+import { ConsultingHoursComponent } from './teaching/consulting-hours/consulting-hours.component';
 import { InterestsComponent } from './research/interests/interests.component';
 import { ProjectsComponent } from './research/projects/projects.component';
 import { PublicationsComponent } from './research/publications/publications.component';
 import { PersonalInfosComponent } from './about_me/personal-infos/personal-infos.component';
-import { HobbiesComponent } from './about_me/hobbies/hobbies.component';
 import { CurriculumVitaeComponent } from './about_me/curriculum-vitae/curriculum-vitae.component';
 import { FooterComponent } from './footer/footer.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
+import {InfographicComponent} from "./about_me/curriculum-vitae/infographic/infographic.component";
 
 @NgModule({
   declarations: [
@@ -29,14 +28,13 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     SubjectsComponent,
     TimetableComponent,
-    DiplomaThesisComponent,
-    TutorActivityComponent,
+    ConsultingHoursComponent,
     InterestsComponent,
     ProjectsComponent,
     PublicationsComponent,
     PersonalInfosComponent,
-    HobbiesComponent,
     CurriculumVitaeComponent,
+    InfographicComponent,
     FooterComponent
   ],
     imports: [
