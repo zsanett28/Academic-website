@@ -1,0 +1,66 @@
+@import "src/styles/colors.scss";
+
+.page-title {
+  color: $primary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.page-text {
+  text-align: center;
+}
+
+.container {
+  margin-top: 3%;
+  max-width: 900px;
+}
+
+p.center {
+  text-align: center;
+}
+
+a.download-document {
+  text-decoration: none;
+  color: $blue;
+}
+
+a.download-document > p:hover {
+  text-decoration: none;
+  color: $primary-color;
+  font-style: italic;
+}
+
+img.center {
+  display: block;
+  width: 150px;
+  margin: 5% auto 14vh;
+}
+
+img.small-icon {
+  display: inline;
+  width: 30px;
+  margin-left: 3%;
+  vertical-align: -5px;
+}
+
+@media (max-width: 479.5px) {
+  img.center {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+  }
+}
+
+@media (max-width: 349.5px) {
+  img.center {
+    margin-bottom: 7vh;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 20%;
+}
