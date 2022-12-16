@@ -1,0 +1,97 @@
+@import "src/styles/colors.scss";
+
+.page-title {
+  color: $primary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.container {
+  margin-top: 3%;
+  max-width: 900px;
+}
+
+p.subtitle {
+  color: $secondary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+p.subtitle-font {
+  color: $primary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+p.subtitle-font-2 {
+  color: $secondary-color;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+p.subtitle-font-3 {
+  color: $secondary-color;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: 20%;
+}
+
+img.clock-img {
+  width: 400px;
+  margin: 1% auto;
+}
+
+.text-justify {
+  text-align: justify;
+  text-indent: 5%;
+}
+
+.subject-box {
+  background-color: #dff1fb;
+  border: 1px solid #41729F;
+  border-radius: 10%;
+  width: 30%;
+  margin-left: 2%;
+}
+
+.bordered-text-box {
+  background-color: #dff1fb;
+  border: 1px solid #41729F;
+  border-radius: 10%;
+  padding: 5%;
+}
+
+@media (max-width: 575.5px) {
+  .subject-box {
+    width: 70%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .subject-box {
+    width: 80%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+  }
+}

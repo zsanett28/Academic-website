@@ -1,0 +1,131 @@
+@import "src/styles/colors.scss";
+
+.page-title {
+  color: $primary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+p.subtitle {
+  display: inline;
+  color: $secondary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 2%;
+}
+
+.container {
+  margin-top: 3%;
+  max-width: 900px;
+}
+
+li.subject-item {
+  list-style-type: none;
+}
+
+li.bordered-filled-paragraph {
+  border-style: solid;
+  border-width: 1px;
+  border-color: $blue;
+  border-radius: 30% 20% / 10% 40%;
+  background-color: $lightblue;
+  padding: 3%;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+li.margin-bottom {
+  margin-bottom: 15%;
+}
+
+img.small-icon {
+  display: inline;
+  width: 20px;
+  margin-left: 3%;
+  vertical-align: -2px;
+}
+
+img.arrow {
+  width: 30px;
+}
+
+button.arrow-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 10%;
+}
+
+p.page-text-subject {
+  padding-left: 10%;
+  padding-right: 10%;
+  color: $blue;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 2%;
+}
+
+p.page-text {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+span.subtitle-font {
+  color: $secondary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+ul.topic-list {
+  margin-left: 10%;
+  list-style-type: disc;
+}
+
+@media (min-width: 570px) {
+  .container {
+  max-width: 60%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+  max-width: 80%;
+  }
+}
+
+@media (max-width: 991.5px) {
+  .container {
+  max-width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  }
+}
+
+@media (max-width: 570px) {
+  li.bordered-filled-paragraph {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #41729F;
+  border-radius: 10% 10% 10% 10%;
+  background-color: #dff1fb;
+  padding: 5%;
+  width: 100%;
+  }
+}
