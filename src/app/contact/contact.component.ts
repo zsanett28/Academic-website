@@ -33,11 +33,21 @@ export class ContactComponent implements OnInit {
   }
 
   closePopup() {
-    this.displayStyle = "none";
+    const popupElement = document.getElementById('popup');
+
+    if (popupElement != null) {
+      popupElement.style.display = 'none';
+    }
+
   }
 
   onSubmit() {
-    this.displayStyle = "block";
+    const popupElement = document.getElementById('popup');
+
+    if (popupElement != null) {
+      popupElement.style.display = 'block';
+    }
+
     this.feedbackForm.reset();
   }
 
