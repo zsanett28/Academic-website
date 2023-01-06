@@ -25,6 +25,11 @@ p.subtitle {
   font-size: 24px;
 }
 
+a.no-design {
+  text-decoration: none;
+  color: $primary-color;
+}
+
 p.subtitle-font {
   color: $primary-color;
   font-variant: small-caps;

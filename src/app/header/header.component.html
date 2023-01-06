@@ -1,12 +1,12 @@
 <br>
-<img routerLink="/home" src="/assets/images/new_logo.png" alt="Logo" class="center">
+<img routerLink="/" src="assets/images/new_logo.png" alt="Logo" class="center">
 
 <nav class="navbar navbar-expand-sm navbar-text">
   <div class="container-fluid topnav">
 
     <ul class="navbar-nav mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="/home">home</a>
+        <a class="nav-link" aria-current="page" routerLink="/">home</a>
       </li>
     </ul>
 
@@ -26,9 +26,9 @@
             teaching
           </a>
           <ul ngbDropdownMenu aria-labelledby="navbarDropdown">
-            <li><a ngbDropdownItem href="teaching/subjects">subjects</a></li>
-            <li><a ngbDropdownItem href="teaching/timetable">timetable</a></li>
-            <li><a ngbDropdownItem href="teaching/consulting_hours">consulting hours</a></li>
+            <li><a ngbDropdownItem (click)="collapsed = true" routerLink="teaching/subjects">subjects</a></li>
+            <li><a ngbDropdownItem (click)="collapsed = true" routerLink="teaching/timetable">timetable</a></li>
+            <li><a ngbDropdownItem (click)="collapsed = true" routerLink="teaching/consulting_hours">consulting hours</a></li>
           </ul>
         </li>
 
@@ -37,9 +37,9 @@
             research
           </a>
           <ul ngbDropdownMenu aria-labelledby="navbarDropdown">
-            <li><a ngbDropdownItem href="research/interests">interests</a></li>
-            <li><a ngbDropdownItem href="research/projects">projects</a></li>
-            <li><a ngbDropdownItem href="research/publications">publications</a></li>
+            <li><a ngbDropdownItem (click)="collapsed = true" routerLink="research/interests">interests</a></li>
+            <li><a ngbDropdownItem (click)="collapsed = true" routerLink="research/projects">projects</a></li>
+            <li><a ngbDropdownItem (click)="collapsed = true" routerLink="research/publications">publications</a></li>
           </ul>
         </li>
 
@@ -48,13 +48,13 @@
             about me
           </a>
           <ul ngbDropdownMenu aria-labelledby="navbarDropdown">
-            <li><a ngbDropdownItem href="about_me/personal_infos">personal infos</a></li>
-            <li><a ngbDropdownItem href="about_me/curriculum_vitae">curriculum vitae</a></li>
+            <li><a ngbDropdownItem (click)="collapsed = true" routerLink="about_me/personal_infos">personal infos</a></li>
+            <li><a ngbDropdownItem (click)="collapsed = true" routerLink="about_me/curriculum_vitae">curriculum vitae</a></li>
           </ul>
         </li>
 
         <li class="nav-item li-border">
-          <a class="nav-link" aria-current="page" href="/contact">contact</a>
+          <a class="nav-link" aria-current="page" (click)="collapsed = true" routerLink="/contact">contact</a>
         </li>
 
       </ul>

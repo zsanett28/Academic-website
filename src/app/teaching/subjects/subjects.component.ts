@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-subjects',
@@ -10,13 +11,27 @@ export class SubjectsComponent implements OnInit {
   public showSecond:boolean = false;
   public showThird:boolean = false;
 
-  ngOnInit () {  }
+  private fragment: string | null;
+
+  constructor(private route: ActivatedRoute) {
+  }
+
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+  }
+
+  ngAfterViewInit(): void {
+    try {
+      if(!!this.fragment) {
+        document.querySelector('#' + this.fragment)?.scrollIntoView();
+      }
+    } catch (e) { }
+  }
 
   toggle(element: string) {
     const subject = document.getElementById(element);
 
     if (subject != null) {
-      console.log(subject.id);
       if (subject.id == 'subject-1') {
         if (!this.showFirst) {
           subject.style.padding = '10%';

@@ -1,188 +1,194 @@
-<p class="page-title">Subjects</p>
+<p class="page-title">Teaching Subjects</p>
 
 <div class="container">
   <div class="row">
     <ul class="subjects">
-      <li class="subject-item bordered-filled-paragraph" id="subject-1" #subject1>
-        <img src="/assets/images/laptop-icon.png" alt="Laptop-logo" class="small-icon"><p class="subtitle"> Basics of Web Designing</p>
-        <p class="page-text-subject">Description:</p>
-        <p class="page-text">This subject contains a basic introduction to familiarize students
-          with the basics of designing a website to its <span class="subtitle-font">tools, software applications and themes</span>.
-        </p>
+      <section id="sbj-1">
+        <li class="subject-item bordered-filled-paragraph" id="subject-1" #subject1>
+          <img src="assets/images/laptop-icon.png" alt="Laptop-logo" class="small-icon"><p class="subtitle"> Basics of Web Designing</p>
+          <p class="page-text-subject">Description:</p>
+          <p class="page-text">This subject contains a basic introduction to familiarize students
+            with the basics of designing a website to its <span class="subtitle-font">tools, software applications and themes</span>.
+          </p>
 
-        <div class="row justify-content-center">
-          <p *ngIf="!showFirst" class="text-center">.....</p>
-          <button *ngIf="!showFirst" (click)="toggle(subject1.id)" class="arrow-button">
-            <img src="/assets/images/down-arrow.png" alt="Down Array" class="small-icon arrow">
-          </button>
-        </div>
+          <div class="row justify-content-center">
+            <p *ngIf="!showFirst" class="text-center">.....</p>
+            <button *ngIf="!showFirst" (click)="toggle(subject1.id)" class="arrow-button">
+              <img src="assets/images/down-arrow.png" alt="Down Array" class="small-icon arrow">
+            </button>
+          </div>
 
-        <ng-container *ngIf="showFirst">
-          <p class="page-text">We will talk about <span class="subtitle-font">html</span>,
-            which is an integral part of this subject and is described as hypermark text language. It is a key element of creating a
-            website, in this subject, you will get to understand how HTML elaborates the general structure of a web page design as well
-            as tags and the concept of HTML files.
+          <ng-container *ngIf="showFirst">
+            <p class="page-text">We will talk about <span class="subtitle-font">html</span>,
+              which is an integral part of this subject and is described as hypermark text language. It is a key element of creating a
+              website, in this subject, you will get to understand how HTML elaborates the general structure of a web page design as well
+              as tags and the concept of HTML files.
+            </p>
+            <p class="page-text">Talking about the tools essential for web page designing, cascading style sheets a.k.a
+              <span class="subtitle-font">css</span> is something you will learn along
+              the journey of this subject too. It is the language used to comprehend a web page’s overall presentation that consists of its
+              layout, fonts as well as colours and themes.
+            </p>
+            <p class="page-text">Finally, our last topic is the <span class="subtitle-font">javascript</span>. It is a logic-based language
+              in programming and interactive websites
+              with cool tabs, sliders, calls to action and other dynamic features.
+            </p>
+            <p class="page-text-subject">Labs: </p>
+            <p class="page-text">
+              During the semester we will discuss the following topics: </p>
+              <ul class="topic-list">
+                <li class="topic-item">How to design a website?</li>
+                <li class="topic-item">Creating different themes for different layouts</li>
+                <li class="topic-item">How to design the look and feel of a website?</li>
+                <li class="topic-item">How to create and design banners, advertisements, etc.</li>
+                <li class="topic-item">Deep dive into HTML</li>
+                <li class="topic-item">Deep dive into CSS</li>
+                <li class="topic-item">Deep dive into JavaScript</li>
+              </ul>
+            <p class="page-text-subject">Grading: </p>
+            <p class="page-text">
+              Final Mark = <b>30% Project Work + 70% Final Exam</b>
+            </p>
+            <p class="page-text">
+              Regarding to the project, we will discuss about it on our first lab. You just have to be creative and use the skills, which
+              we will develop during the classes.
+            </p>
+            <p class="page-text-subject">Teams Code: </p>
+            <p class="page-text">
+              The name of the team is: <span class="subtitle-font">Basics of Web Designing 2022</span>.
+              You can join to this group with the code: <b>t1gm6l3</b>.
+            </p>
+          </ng-container>
+
+          <div class="row justify-content-center">
+            <button *ngIf="showFirst" (click)="toggle(subject1.id)" class="arrow-button">
+              <img src="assets/images/up-arrow.png" alt="Up Array" class="small-icon arrow">
+            </button>
+          </div>
+        </li>
+      </section>
+
+      <section id="sbj-2">
+        <li class="subject-item bordered-filled-paragraph" id="subject-2" #subject2>
+          <img src="assets/images/laptop-icon.png" alt="Laptop-logo" class="small-icon"><p class="subtitle"> Responsive Web Design</p>
+          <p class="page-text-subject">Description:</p>
+          <p class="page-text"><span class="subtitle-font">Responsive Web Design (rwd)</span> is the approach that suggests that design and
+            development should respond
+            to the user’s behavior and environment based on screen size, platform and orientation.
           </p>
-          <p class="page-text">Talking about the tools essential for web page designing, cascading style sheets a.k.a
-            <span class="subtitle-font">css</span> is something you will learn along
-            the journey of this subject too. It is the language used to comprehend a web page’s overall presentation that consists of its
-            layout, fonts as well as colours and themes.
-          </p>
-          <p class="page-text">Finally, our last topic is the <span class="subtitle-font">javascript</span>. It is a logic-based language
-            in programming and interactive websites
-            with cool tabs, sliders, calls to action and other dynamic features.
-          </p>
-          <p class="page-text-subject">Labs: </p>
-          <p class="page-text">
-            During the semester we will discuss the following topics: </p>
+
+          <div class="row justify-content-center">
+            <p *ngIf="!showSecond" class="text-center">.....</p>
+            <button *ngIf="!showSecond" (click)="toggle(subject2.id)" class="arrow-button">
+              <img src="assets/images/down-arrow.png" alt="Down Array" class="small-icon arrow">
+            </button>
+          </div>
+
+          <ng-container *ngIf="showSecond">
+            <p class="page-text">Our practice will consist of a mix of <span class="subtitle-font">flexible grids</span> and
+              <span class="subtitle-font">layouts</span>,
+              <span class="subtitle-font">images</span> and an intelligent use of
+              <span class="subtitle-font">css media queries</span>. As the user switches from their laptop to iPad, the website should
+              automatically switch to
+              accommodate for resolution, image size and scripting abilities.
+            </p>
+            <p class="page-text">
+              This subject takes you on a journey through the many facets of modern responsive web design.
+              The first few modules will ease you in with a <span class="subtitle-font">history</span> of where responsive design came
+              from and a look at the <span class="subtitle-font">fundamentals</span> of responsive layouts. From there, you’ll learn
+              about <span class="subtitle-font">responsive images, typography, accessibility</span> and more.
+            </p>
+            <p class="page-text-subject">Labs: </p>
+            <p class="page-text">
+              During the semester we will discuss the following topics: </p>
             <ul class="topic-list">
-              <li class="topic-item">How to design a website?</li>
-              <li class="topic-item">Creating different themes for different layouts</li>
-              <li class="topic-item">How to design the look and feel of a website?</li>
-              <li class="topic-item">How to create and design banners, advertisements, etc.</li>
-              <li class="topic-item">Deep dive into HTML</li>
-              <li class="topic-item">Deep dive into CSS</li>
-              <li class="topic-item">Deep dive into JavaScript</li>
+              <li class="topic-item">Introduction: history and fundamentals of RWD</li>
+              <li class="topic-item">Media Queries and internationalization</li>
+              <li class="topic-item">Macro and micro layouts</li>
+              <li class="topic-item">Typography, responsive images, icons</li>
+              <li class="topic-item">Accessibility</li>
+              <li class="topic-item">Interaction</li>
+              <li class="topic-item">User interface patterns</li>
             </ul>
-          <p class="page-text-subject">Grading: </p>
-          <p class="page-text">
-            Final Mark = <b>30% Project Work + 70% Final Exam</b>
-          </p>
-          <p class="page-text">
-            Regarding to the project, we will discuss about it on our first lab. You just have to be creative and use the skills, which
-            we will develop during the classes.
-          </p>
-          <p class="page-text-subject">Teams Code: </p>
-          <p class="page-text">
-            The name of the team is: <span class="subtitle-font">Basics of Web Designing 2022</span>.
-            You can join to this group with the code: <b>t1gm6l3</b>.
-          </p>
-        </ng-container>
+            <p class="page-text-subject">Grading: </p>
+            <p class="page-text">
+              Final Mark = <b>20% Homeworks + 30% Practical Exam + 50% Final Exam</b>
+            </p>
+            <p class="page-text">
+              Regarding to the homeworks and practical exercises, we will discuss about it on our first lab.
+            </p>
+            <p class="page-text-subject">Teams Code: </p>
+            <p class="page-text">
+              The name of the team is: <span class="subtitle-font">RWD 2022</span>.
+              You can join to this group with the code: <b>j5hh3g9</b>.
+            </p>
+          </ng-container>
 
-        <div class="row justify-content-center">
-          <button *ngIf="showFirst" (click)="toggle(subject1.id)" class="arrow-button">
-            <img src="/assets/images/up-arrow.png" alt="Up Array" class="small-icon arrow">
-          </button>
-        </div>
-      </li>
+          <div class="row justify-content-center">
+            <button *ngIf="showSecond" (click)="toggle(subject2.id)" class="arrow-button">
+              <img src="assets/images/up-arrow.png" alt="Up Array" class="small-icon arrow">
+            </button>
+          </div>
 
-      <li class="subject-item bordered-filled-paragraph" id="subject-2" #subject2>
-        <img src="/assets/images/laptop-icon.png" alt="Laptop-logo" class="small-icon"><p class="subtitle"> Responsive Web Design</p>
-        <p class="page-text-subject">Description:</p>
-        <p class="page-text"><span class="subtitle-font">Responsive Web Design (rwd)</span> is the approach that suggests that design and
-          development should respond
-          to the user’s behavior and environment based on screen size, platform and orientation.
-        </p>
+        </li>
+      </section>
 
-        <div class="row justify-content-center">
-          <p *ngIf="!showSecond" class="text-center">.....</p>
-          <button *ngIf="!showSecond" (click)="toggle(subject2.id)" class="arrow-button">
-            <img src="/assets/images/down-arrow.png" alt="Down Array" class="small-icon arrow">
-          </button>
-        </div>
-
-        <ng-container *ngIf="showSecond">
-          <p class="page-text">Our practice will consist of a mix of <span class="subtitle-font">flexible grids</span> and
-            <span class="subtitle-font">layouts</span>,
-            <span class="subtitle-font">images</span> and an intelligent use of
-            <span class="subtitle-font">css media queries</span>. As the user switches from their laptop to iPad, the website should
-            automatically switch to
-            accommodate for resolution, image size and scripting abilities.
+      <section id="sbj-3">
+        <li class="subject-item bordered-filled-paragraph margin-bottom" id="subject-3" #subject3>
+          <img src="assets/images/laptop-icon.png" alt="Laptop-logo" class="small-icon"><p class="subtitle"> Web Technologies</p>
+          <p class="page-text-subject">Description:</p>
+          <p class="page-text">The World Wide Web continues to provide a foundation for the development of a broad range of
+            increasingly influential and strategic <span class="subtitle-font">technologies</span>, supporting a large variety
+            of <span class="subtitle-font">applications</span> and <span class="subtitle-font">services</span>,
+            both in the private and public sectors. There is a growing need for management and decision makers to gain a clearer
+            understanding of the application development process, from planning through to deployment and maintenance.
           </p>
-          <p class="page-text">
-            This subject takes you on a journey through the many facets of modern responsive web design.
-            The first few modules will ease you in with a <span class="subtitle-font">history</span> of where responsive design came
-            from and a look at the <span class="subtitle-font">fundamentals</span> of responsive layouts. From there, you’ll learn
-            about <span class="subtitle-font">responsive images, typography, accessibility</span> and more.
-          </p>
-          <p class="page-text-subject">Labs: </p>
-          <p class="page-text">
-            During the semester we will discuss the following topics: </p>
-          <ul class="topic-list">
-            <li class="topic-item">Introduction: history and fundamentals of RWD</li>
-            <li class="topic-item">Media Queries and internationalization</li>
-            <li class="topic-item">Macro and micro layouts</li>
-            <li class="topic-item">Typography, responsive images, icons</li>
-            <li class="topic-item">Accessibility</li>
-            <li class="topic-item">Interaction</li>
-            <li class="topic-item">User interface patterns</li>
-          </ul>
-          <p class="page-text-subject">Grading: </p>
-          <p class="page-text">
-            Final Mark = <b>20% Homeworks + 30% Practical Exam + 50% Final Exam</b>
-          </p>
-          <p class="page-text">
-            Regarding to the homeworks and practical exercises, we will discuss about it on our first lab.
-          </p>
-          <p class="page-text-subject">Teams Code: </p>
-          <p class="page-text">
-            The name of the team is: <span class="subtitle-font">RWD 2022</span>.
-            You can join to this group with the code: <b>j5hh3g9</b>.
-          </p>
-        </ng-container>
 
-        <div class="row justify-content-center">
-          <button *ngIf="showSecond" (click)="toggle(subject2.id)" class="arrow-button">
-            <img src="/assets/images/up-arrow.png" alt="Up Array" class="small-icon arrow">
-          </button>
-        </div>
+          <div class="row justify-content-center">
+            <p *ngIf="!showThird" class="text-center">.....</p>
+            <button *ngIf="!showThird" (click)="toggle(subject3.id)" class="arrow-button">
+              <img src="assets/images/down-arrow.png" alt="Down Array" class="small-icon arrow">
+            </button>
+          </div>
 
-      </li>
+          <ng-container *ngIf="showThird">
+            <p class="page-text">This subject will give you an insight into <span class="subtitle-font">architectures, protocols,
+              standards, languages, tools and techniques</span>; an understanding of approaches to more dynamic and mobile content;
+              and demonstrate how you can <span class="subtitle-font">analyse requirements, plan, design, implement</span> and
+              <span class="subtitle-font">test</span> a range of web applications.
+            </p>
+            <p class="page-text-subject">Labs: </p>
+            <p class="page-text">
+              During the semester we will discuss the following topics: </p>
+            <ul class="topic-list">
+              <li class="topic-item">Foundations of web technology</li>
+              <li class="topic-item">Web architectures</li>
+              <li class="topic-item">Mobile content</li>
+              <li class="topic-item">Developing applications</li>
+            </ul>
+            <p class="page-text-subject">Grading: </p>
+            <p class="page-text">
+              Final Mark = <b>40% Project Work + 60% Final Exam</b>
+            </p>
+            <p class="page-text">
+              Regarding to the project, we will discuss about it on our first lab. You just have to apply the skills and
+              techniques from each lab.
+            </p>
+            <p class="page-text-subject">Teams Code: </p>
+            <p class="page-text">
+              The name of the team is: <span class="subtitle-font">Web Technologies 2022</span>.
+              You can join to this group with the code: <b>s2nd7ka</b>.
+            </p>
+          </ng-container>
 
-      <li class="subject-item bordered-filled-paragraph margin-bottom" id="subject-3" #subject3>
-        <img src="/assets/images/laptop-icon.png" alt="Laptop-logo" class="small-icon"><p class="subtitle"> Web Technologies</p>
-        <p class="page-text-subject">Description:</p>
-        <p class="page-text">The World Wide Web continues to provide a foundation for the development of a broad range of
-          increasingly influential and strategic <span class="subtitle-font">technologies</span>, supporting a large variety
-          of <span class="subtitle-font">applications</span> and <span class="subtitle-font">services</span>,
-          both in the private and public sectors. There is a growing need for management and decision makers to gain a clearer
-          understanding of the application development process, from planning through to deployment and maintenance.
-        </p>
+          <div class="row justify-content-center">
+            <button *ngIf="showThird" (click)="toggle(subject3.id)" class="arrow-button">
+              <img src="assets/images/up-arrow.png" alt="Up Array" class="small-icon arrow">
+            </button>
+          </div>
 
-        <div class="row justify-content-center">
-          <p *ngIf="!showThird" class="text-center">.....</p>
-          <button *ngIf="!showThird" (click)="toggle(subject3.id)" class="arrow-button">
-            <img src="/assets/images/down-arrow.png" alt="Down Array" class="small-icon arrow">
-          </button>
-        </div>
-
-        <ng-container *ngIf="showThird">
-          <p class="page-text">This subject will give you an insight into <span class="subtitle-font">architectures, protocols,
-            standards, languages, tools and techniques</span>; an understanding of approaches to more dynamic and mobile content;
-            and demonstrate how you can <span class="subtitle-font">analyse requirements, plan, design, implement</span> and
-            <span class="subtitle-font">test</span> a range of web applications.
-          </p>
-          <p class="page-text-subject">Labs: </p>
-          <p class="page-text">
-            During the semester we will discuss the following topics: </p>
-          <ul class="topic-list">
-            <li class="topic-item">Foundations of web technology</li>
-            <li class="topic-item">Web architectures</li>
-            <li class="topic-item">Mobile content</li>
-            <li class="topic-item">Developing applications</li>
-          </ul>
-          <p class="page-text-subject">Grading: </p>
-          <p class="page-text">
-            Final Mark = <b>40% Project Work + 60% Final Exam</b>
-          </p>
-          <p class="page-text">
-            Regarding to the project, we will discuss about it on our first lab. You just have to apply the skills and
-            techniques from each lab.
-          </p>
-          <p class="page-text-subject">Teams Code: </p>
-          <p class="page-text">
-            The name of the team is: <span class="subtitle-font">Web Technologies 2022</span>.
-            You can join to this group with the code: <b>s2nd7ka</b>.
-          </p>
-        </ng-container>
-
-        <div class="row justify-content-center">
-          <button *ngIf="showThird" (click)="toggle(subject3.id)" class="arrow-button">
-            <img src="/assets/images/up-arrow.png" alt="Up Array" class="small-icon arrow">
-          </button>
-        </div>
-
-      </li>
+        </li>
+      </section>
     </ul>
   </div>
 </div>
