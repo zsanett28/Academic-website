@@ -1,0 +1,58 @@
+@import "src/styles/colors.scss";
+
+.page-title {
+  color: $primary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.container {
+  margin-top: 3%;
+  max-width: 900px;
+}
+
+.page-text {
+  text-align: justify;
+  text-indent: 5%;
+}
+
+.subtitle {
+  color: $secondary-color;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.subtitle-font {
+  color: $blue;
+  font-variant: small-caps;
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.margin-bottom {
+  margin-bottom: 15%;
+}
+
+img.word-cloud {
+  width: 70%;
+  margin: 1% auto;
+}
+
+@media (max-width: 991.5px) {
+  img.word-cloud {
+    width: 100%;
+    margin: 1% auto;
+  }
+}
