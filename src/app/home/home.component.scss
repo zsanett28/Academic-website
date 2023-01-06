@@ -31,7 +31,7 @@ img.small-icon {
 .title-font {
   color: $secondary-color;
   font-variant: small-caps;
-  font-family: "Bradley Hand ITC";
+  font-family: "Bradley Hand ITC", serif;
   font-weight: bold;
   text-decoration: none;
   font-size: 28px;
@@ -41,7 +41,7 @@ img.small-icon {
 .subtitle-font {
   color: $blue;
   font-variant: small-caps;
-  font-family: "Bradley Hand ITC";
+  font-family: "Bradley Hand ITC", serif;
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
@@ -50,7 +50,7 @@ img.small-icon {
 .subtitle-font-2 {
   color: $blue;
   font-variant: small-caps;
-  font-family: "Bradley Hand ITC";
+  font-family: "Bradley Hand ITC", serif;
   font-weight: bold;
   text-decoration: none;
   font-size: 32px;
@@ -125,7 +125,7 @@ p {
   }
 
   .container {
-    margin-top: 0%;
+    margin-top: 0;
     margin-bottom: 15%;
   }
 }
@@ -140,7 +140,7 @@ p {
   }
 
   img.left {
-    margin-top: 0%;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     width: 180px;
@@ -151,6 +151,6 @@ p {
   }
 
   .container {
-    margin-bottom: 0%;
+    margin-bottom: 0;
   }
 }
